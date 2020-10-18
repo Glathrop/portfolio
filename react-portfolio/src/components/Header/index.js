@@ -9,7 +9,7 @@ function Header(props) {
     } = props;
     
     return(
-        <header className="App-header">
+        <header className="app-header">
             <h1>Shaun Mardones</h1>
             <Nav 
             currentTab={currentTab}

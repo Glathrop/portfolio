@@ -31,13 +31,13 @@ function Project() {
     return(
         <div>
         <h2>Projects</h2>
-        <div className='flex-row'>
+        <div className="projects-container">
             {projects.map((project) => (
                 <a href={project.url} key={project.name}>
                     <img
                     src={require(`../../assets/images/${project.name.replace(/\s/g, '')}.png`)}
                     alt={project.name}
-                    className="mx-1"
+                    className="project-img"
                     key={project.name}
                     />
                 </a>
