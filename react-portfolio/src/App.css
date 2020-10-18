@@ -25,6 +25,10 @@ h1 {
   margin: 20px;
 }
 
+h2, h3, h4, h5, p {
+  margin: 10px;
+}
+
 .tab-list {
   display: flex;
   flex-direction: row;
@@ -81,6 +85,10 @@ section {
 
 /* Contact Form */
 
+form {
+  margin-bottom: 50px;
+}
+
 label {
   display: block;
 }
@@ -97,7 +105,8 @@ button {
 
 footer {
   background-color: var(--main-bg-color);
-  position: absolute;
+  position: relative;
+  left: 0;
   bottom: 0;
   width: 100%;
   
