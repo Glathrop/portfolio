@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Header from './components/Header/';
+import ProjectGallery from './components/ProjectGallery/';
+import Resume from './components/Resume';
 
 import './App.css';
 
@@ -11,16 +13,18 @@ function App() {
   {name: "Contact Me"}
   ];
 
-  const [currentTab, setCurrentTab] = useState(navOtions[0]);
+  const [currentTab, setCurrentTab] = useState(navOptions[0]);
 
   return (
     <div className="App">
       <Header 
+      navOptions={navOptions}
       currentTab={currentTab}
       setCurrentTab={setCurrentTab}
       />
       <main>
-
+        <ProjectGallery />
+        <Resume />
       </main>
       <footer>
 
