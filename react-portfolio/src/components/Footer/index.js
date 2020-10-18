@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return(
-        <div className="flex-row">
+        <div className="footer-icons">
             <a href="https://github.com/smardones">
                 <img 
                     src={require('../../assets/icons/GitHub.png')} 

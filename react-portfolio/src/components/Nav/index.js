@@ -10,7 +10,7 @@ function Nav(props) {
         <nav>
             <ul className="tab-list">
                 {navOptions.map((option) => (
-                    <li key={option.name} className="tab">
+                    <li key={option.name} className="tab" sm={12} md={6} lg={4}>
                         <span onClick={()=> 
                         setCurrentTab(option)}>{option.name}</span>
                     </li>
