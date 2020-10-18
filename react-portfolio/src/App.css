@@ -1,5 +1,4 @@
 * {
-  position: relative;
   margin: 0;
   padding: 0;
   
@@ -39,6 +38,15 @@ h1 {
   
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  width: 80%;
+  margin: 70px;
+}
 
 /* About Section */
 

@@ -4,9 +4,9 @@ import Project from '../Project/';
 function ProjectGallery() {
 
     return(
-        <div>
+        <section>
             <Project />
-        </div>
+        </section>
     )
 }
 
