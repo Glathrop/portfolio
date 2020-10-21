@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header/';
 import ProjectGallery from './components/ProjectGallery/';
 import Resume from './components/Resume';
@@ -10,10 +10,10 @@ import './App.css';
 
 function App() {
   const navOptions = [
-  {name: "About Me"}, 
-  {name: "Past Projects"}, 
-  {name: "Resume"}, 
-  {name: "Contact Me"}
+    { name: 'About Me' },
+    { name: 'Past Projects' },
+    { name: 'Resume' },
+    { name: 'Contact Me' },
   ];
 
   const [currentTab, setCurrentTab] = useState(navOptions[0]);
@@ -26,22 +26,20 @@ function App() {
         return <ProjectGallery />;
       case 'Resume':
         return <Resume />;
-      default: return <About />;
+      default:
+        return <About />;
       case 'Contact Me':
-        return <ContactForm />
-      
+        return <ContactForm />;
     }
-  }
+  };
   return (
-    <div className="App container-fluid">
-      <Header 
-      navOptions={navOptions}
-      currentTab={currentTab}
-      setCurrentTab={setCurrentTab}
+    <div className="App containerFluid">
+      <Header
+        navOptions={navOptions}
+        currentTab={currentTab}
+        setCurrentTab={setCurrentTab}
       />
-      <main>
-        {renderTab(currentTab)}
-      </main>
+      <main>{renderTab(currentTab)}</main>
       <footer>
         <Footer />
       </footer>
